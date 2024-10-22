@@ -574,6 +574,12 @@ public class AppFrame extends JFrame {
         jMenuGo.add(jMenuGoHBack);
         jMenuGo.addSeparator();
         jMenuGo.addSeparator();
+        jMenuGo.addSeparator();
+        jMenuGo.addSeparator();
+        jMenuGo.addSeparator();
+        jMenuGo.addSeparator();
+        jMenuGo.addSeparator();
+        jMenuGo.addSeparator();
         jMenuGo.add(jMenuGoFwd);
         jMenuGo.addSeparator();
         jMenuGo.add(jMenuGoDayBack);
