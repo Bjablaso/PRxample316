@@ -12,7 +12,7 @@ import main.java.memoranda.util.Local;
 
 /*$Id: CalendarFrame.java,v 1.5 2004/04/05 10:05:44 alexeya Exp $*/
 public class CalendarFrame extends JInternalFrame {
-
+/// add Ui Component//
   public JNCalendarPanel cal = new JNCalendarPanel();
   Border border1;
 

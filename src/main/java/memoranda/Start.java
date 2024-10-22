@@ -66,6 +66,7 @@ public class Start {
             app = new App(false);
     }
 }
+// fix bug
 
 class SLThread extends Thread {
     

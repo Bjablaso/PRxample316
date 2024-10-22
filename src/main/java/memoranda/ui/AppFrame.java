@@ -73,6 +73,7 @@ public class AppFrame extends JFrame {
 
     JToolBar toolBar = new JToolBar();
     JButton jButton3 = new JButton();
+    JButton jButton4 = new JButton();
     ImageIcon image1;
     ImageIcon image2;
     ImageIcon image3;
@@ -275,6 +276,8 @@ public class AppFrame extends JFrame {
             }
         });
         jMenuHelp.setText(Local.getString("Help"));
+        //added code
+        jMenuHelpAbout.setText(Local.getString("About"));
         
         jMenuHelpGuide.setText(Local.getString("Online user's guide"));
         jMenuHelpGuide.setIcon(new ImageIcon(AppFrame.class.getResource(
@@ -309,6 +312,7 @@ public class AppFrame extends JFrame {
         });
         //jButton3.setIcon(image3);
         jButton3.setToolTipText(Local.getString("Help"));
+        jButton4.setToolTipText(Local.getString("JJasmine"));
         splitPane.setOrientation(JSplitPane.VERTICAL_SPLIT);
 
         splitPane.setContinuousLayout(true);
@@ -329,6 +333,7 @@ public class AppFrame extends JFrame {
          }
          });
          */
+
         jMenuFileNewPrj.setAction(projectsPanel.newProjectAction);
 
         jMenuFileUnpackPrj.setText(Local.getString("Unpack project") + "...");
@@ -445,6 +450,22 @@ public class AppFrame extends JFrame {
         jMenuInsertHR.setToolTipText(Local.getString("Insert Horizontal rule"));
 
         toolBar.add(jButton3);
+        // added  a button 4
+
+        jButton4.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                System.out.println("Button 4 clicked");
+            }
+        });
+
+        //toolBar.add(jButton4);
+
+
+
+
+
+
+
         jMenuFile.add(jMenuFileNewPrj);
                 jMenuFile.add(jMenuFileNewNote);
         jMenuFile.addSeparator();
@@ -473,6 +494,7 @@ public class AppFrame extends JFrame {
         menuBar.add(jMenuInsert);
         menuBar.add(jMenuFormat);
         menuBar.add(jMenuGo);
+        menuBar.add(jButton4);
         menuBar.add(jMenuHelp);
         this.setJMenuBar(menuBar);
         //contentPane.add(toolBar, BorderLayout.NORTH);
