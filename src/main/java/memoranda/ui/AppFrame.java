@@ -280,6 +280,7 @@ public class AppFrame extends JFrame {
         jMenuHelpAbout.setText(Local.getString("About"));
         
         jMenuHelpGuide.setText(Local.getString("Online user's guide"));
+        jMenuHelpGuide.setText(Local.getString("Traking User Guid"));
         jMenuHelpGuide.setIcon(new ImageIcon(AppFrame.class.getResource(
                 "/ui/icons/help.png")));
         jMenuHelpGuide.addActionListener(new ActionListener() {
