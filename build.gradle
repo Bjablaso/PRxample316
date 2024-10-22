@@ -14,3 +14,11 @@ dependencies {
   implementation 'net.sourceforge.nekohtml:nekohtml:1.9.+'
 }
 
+jar {
+  manifest {
+    attributes 'Main-Class': 'memoranda.Start'  // Specify your main class
+  }
+  from {
+    configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+  }
+}
