@@ -299,6 +299,7 @@ public class AppFrame extends JFrame {
         });
         
         jMenuHelpBug.setText(Local.getString("Report a bug"));
+
         jMenuHelpBug.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 jMenuHelpBug_actionPerformed(e);
@@ -571,6 +572,8 @@ public class AppFrame extends JFrame {
         jMenuFormatTable.add(jMenuFormatTableInsR);
         jMenuFormatTable.add(jMenuFormatTableInsC);
         jMenuGo.add(jMenuGoHBack);
+        jMenuGo.addSeparator();
+        jMenuGo.addSeparator();
         jMenuGo.add(jMenuGoFwd);
         jMenuGo.addSeparator();
         jMenuGo.add(jMenuGoDayBack);
